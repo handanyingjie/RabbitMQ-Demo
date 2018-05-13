@@ -6,7 +6,7 @@ set_time_limit(0);
  * Date: 2018/5/13 0013
  * Time: 13:02
  */
-require_once './vendor/autoload.php';
+require_once  __DIR__.'/../vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 
 $connect = [
