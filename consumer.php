@@ -8,14 +8,13 @@ set_time_limit(0);
  */
 require_once './vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
+
 $connect = [
     'host' => '127.0.0.1',
     'port' => '5672',
     'user' => 'guest',
     'password' => 'guest',
-    'vhost' => '/'
 ];
-$channelKey = 'test_channel';
 //队列名称
 $queueName = 'hello';
 $connection = new AMQPStreamConnection($connect['host'],$connect['port'],$connect['user'],$connect['password']);
